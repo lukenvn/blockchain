@@ -2,8 +2,8 @@ const assert = require('assert');
 const ganache = require('ganache-cli');
 const Web3 = require('web3');
 const web3 = new Web3(ganache.provider());
-const compiledFactory = require('../build/PollFactory.json');
-const compiledPoll = require('../build/Poll.json');
+const compiledFactory = require('../ethereum/build/PollFactory.json');
+const compiledPoll = require('../ethereum/build/Poll.json');
 
 
 let accounts;

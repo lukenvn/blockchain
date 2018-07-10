@@ -7,9 +7,9 @@ const app = next({
 });
 const handler = routes.getRequestHandler(app);
 app.prepare().then(()=>{
-    createServer(handler).listen(3001,(err)=>{
+    createServer(handler).listen(3000,(err)=>{
         if(err) throw err;
-        console.log('Ready on local host:3001');
+        console.log('Ready on local host:3000');
     })
 });
 

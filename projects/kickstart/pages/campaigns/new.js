@@ -23,8 +23,8 @@ class CampaignNew extends Component {
         });
 
         Router.pushRoute('/');
-    } catch (err) {
-      this.setState({ errorMessage: err.message });
+    } catch (err) {;
+      this.setState({ errorMessage: err.message })
     }
     
     this.setState({loading:false});
